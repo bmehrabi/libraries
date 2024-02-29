@@ -1,9 +1,10 @@
 import * as React from 'react';
-import { styled, createTheme, ThemeProvider } from '@mui/material/styles';
+import {useCallback} from 'react';
+import {createTheme, styled, ThemeProvider} from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import MuiDrawer from '@mui/material/Drawer';
 import Box from '@mui/material/Box';
-import MuiAppBar, { AppBarProps as MuiAppBarProps } from '@mui/material/AppBar';
+import MuiAppBar, {AppBarProps as MuiAppBarProps} from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import List from '@mui/material/List';
 import Typography from '@mui/material/Typography';
@@ -17,11 +18,10 @@ import Link from '@mui/material/Link';
 import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import NotificationsIcon from '@mui/icons-material/Notifications';
-import { mainListItems, secondaryListItems } from './listItems';
+import {mainListItems} from './list-item/listItems';
 import Chart from './Chart';
 import Deposits from './Deposits';
 import Orders from './Orders';
-import {useCallback} from "react";
 
 function Copyright(props: any) {
   return (
@@ -149,7 +149,6 @@ function DashboardContent() {
           <List component="nav">
             {mainListItems}
             <Divider sx={{ my: 1 }} />
-            {secondaryListItems}
           </List>
         </Drawer>
         <Box
