@@ -1,12 +1,22 @@
 import React from 'react';
 import './App.css';
-import Dashboard from './components/Dashboard';
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import {DevelopmentProcess} from './pages/development-process/DevelopmentProcess';
+import {About} from './pages/about/About';
+import Search from './pages/search/Search';
+import PageLayout from './pages/page-layout/PageLayout';
 
 function App() {
   return (
-    <div className="App">
-      <Dashboard/>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<PageLayout />}>
+          <Route index element={<Search/>}/>
+          <Route path="about" element={<About/>}/>
+          <Route path="development-process" element={<DevelopmentProcess/>}/>
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
