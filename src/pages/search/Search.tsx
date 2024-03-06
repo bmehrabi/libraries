@@ -3,7 +3,7 @@ import {createTheme, ThemeProvider} from '@mui/material/styles';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
-import Orders from '../../components/order/Orders';
+import Projects from '../../components/project/Projects';
 
 const mdTheme = createTheme();
 
@@ -15,7 +15,7 @@ function SearchContent() {
           {/* Recent Orders */}
           <Grid item xs={12}>
             <Paper sx={{ p: 2, display: 'flex', flexDirection: 'column' }}>
-              <Orders />
+              <Projects />
             </Paper>
           </Grid>
         </Grid>
