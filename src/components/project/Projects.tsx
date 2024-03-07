@@ -104,7 +104,7 @@ export default function Projects({query}: IProjectProps) {
         </TableHead>
         <TableBody>
           {rows.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage).map((row) => (
-            <TableRow key={row.repository_url}>
+            <TableRow key={row.name + row.repository_url}>
               <TableCell>{row.name}</TableCell>
               <TableCell>{row.licenses || '-'}</TableCell>
               <TableCell>
