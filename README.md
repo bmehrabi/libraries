@@ -1,46 +1,43 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Getting Started with the project
 
-## Available Scripts
+To run the project you need yarn and NodeJS. This project has been developed with NodeJs version 16.16.0.
 
-In the project directory, you can run:
+To prevent any kind of error, we suggest that you use the same version.
 
-### `npm start`
+## Installing the dependencies
 
-Runs the app in the development mode.\
+To install the dependecies run this command:
+
+`yarn install`
+
+## Running the project
+The project comes with a `.env.example` file. Copy this file and name it `.env`.
+
+You need an API_KEY from libraries.io to run this project. To get an API_KEY use this link:
+
+https://libraries.io/login
+
+Then, run this command:
+
+`yarn start`
+
+This will run the app in the development mode.
+
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+### Running Tests
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To run tests, run this command:
 
-### `npm run build`
+`yarn test`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This will run tests and also generates the code coverage report.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Contact Me
 
-### `npm run eject`
+If you have any question or comment, please send me an email to this address:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+b.mehrabi.91 [at] gmail.com
