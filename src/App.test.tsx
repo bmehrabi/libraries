@@ -7,10 +7,10 @@ jest.mock('./components/project/Projects', () => () => {
 });
 
 describe('App Component', () => {
-  it('renders "Dashboard" text inside the app', () => {
+  it('renders "Wire App" text inside the app', () => {
     render(<App />);
 
-    const dashboardTexts = screen.queryAllByText('Dashboard');
+    const dashboardTexts = screen.queryAllByText('Wire App');
     expect(dashboardTexts[0]).toBeInTheDocument();
   });
 });

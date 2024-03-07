@@ -10,12 +10,10 @@ import List from '@mui/material/List';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
 import IconButton from '@mui/material/IconButton';
-import Badge from '@mui/material/Badge';
 import Link from '@mui/material/Link';
 import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
-import NotificationsIcon from '@mui/icons-material/Notifications';
-import {mainListItems} from '../../components/list-item/ListItems';
+import {mainListItems} from 'src/components/list-item/ListItems';
 import {Outlet} from "react-router-dom";
 
 function Copyright(props: any) {
@@ -118,13 +116,8 @@ function PageLayoutContent() {
               noWrap
               sx={{ flexGrow: 1 }}
             >
-              Dashboard
+              Wire App
             </Typography>
-            <IconButton color="inherit">
-              <Badge badgeContent={4} color="secondary">
-                <NotificationsIcon />
-              </Badge>
-            </IconButton>
           </Toolbar>
         </AppBar>
         <Drawer variant="permanent" open={open}>
