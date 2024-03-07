@@ -122,6 +122,8 @@ export const DevelopmentProcess = () => {
               All of these process also can be view in the git history. Each commit is descriptive and shows the step
               and the changes that has been done into the project.
             </p>
+
+            <br/><br/>
           </Paper>
         </Grid>
       </Grid>

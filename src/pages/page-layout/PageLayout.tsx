@@ -10,21 +10,16 @@ import List from '@mui/material/List';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
 import IconButton from '@mui/material/IconButton';
-import Link from '@mui/material/Link';
 import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import {mainListItems} from 'src/components/list-item/ListItems';
 import {Outlet} from "react-router-dom";
+import Paper from '@mui/material/Paper';
 
 function Copyright(props: any) {
   return (
-    <Typography variant="body2" color="text.secondary" align="center" {...props}>
-      {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
+    <Typography variant="body2" color="white" align="center" padding="1rem" {...props}>
+      {'Developed at Mar. 2024 '}
     </Typography>
   );
 }
@@ -153,7 +148,14 @@ function PageLayoutContent() {
         >
           <Toolbar />
           <Outlet />
-          <Copyright sx={{ pt: 4 }} />
+          <Paper sx={{marginTop: 'calc(10% + 60px)',
+            position: 'fixed',
+            bottom: 0,
+            width: '100%',
+            backgroundColor: (theme) => theme.palette.primary.main,
+          }} square>
+            <Copyright sx={{ pt: 4 }} />
+          </Paper>
         </Box>
       </Box>
     </ThemeProvider>

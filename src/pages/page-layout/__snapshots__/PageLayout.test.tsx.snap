@@ -198,20 +198,15 @@ exports[`matches the snapshot 1`] = `
       <div
         class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-hyum1k-MuiToolbar-root"
       />
-      <p
-        class="MuiTypography-root MuiTypography-body2 MuiTypography-alignCenter css-9wziol-MuiTypography-root"
+      <div
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation1 css-kks9oq-MuiPaper-root"
       >
-        Copyright © 
-        <a
-          class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-xdxgn1-MuiTypography-root-MuiLink-root"
-          href="https://mui.com/"
+        <p
+          class="MuiTypography-root MuiTypography-body2 MuiTypography-alignCenter css-16z8frn-MuiTypography-root"
         >
-          Your Website
-        </a>
-         
-        2024
-        .
-      </p>
+          Developed at Mar. 2024 
+        </p>
+      </div>
     </main>
   </div>
 </div>

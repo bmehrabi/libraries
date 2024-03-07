@@ -132,6 +132,8 @@ exports[`matches the snapshot 1`] = `
           <p>
             All of these process also can be view in the git history. Each commit is descriptive and shows the step and the changes that has been done into the project.
           </p>
+          <br />
+          <br />
         </div>
       </div>
     </div>
