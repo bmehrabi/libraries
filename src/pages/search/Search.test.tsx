@@ -1,9 +1,9 @@
 import React from 'react';
-import {render} from '@testing-library/react';
+import {fireEvent, render, screen, waitFor} from '@testing-library/react';
 import Search from './Search';
 
-jest.mock('../../components/project/Projects', () => () => {
-    return 'Projects';
+jest.mock('src/components/project/Projects', () => (props: {query: string}) => {
+    return 'Projects: ' + props.query;
 });
 
 describe('Search Component', () => {
@@ -11,6 +11,17 @@ describe('Search Component', () => {
         const {container} = render(<Search />);
 
         expect(container).toMatchSnapshot();
+    });
+
+    it('uses the search field value to load the projects', async () => {
+        render(<Search />);
+
+        const input = screen.getByLabelText(/search/i);
+        fireEvent.change(input, {target: {value: 'test'}});
+
+        await waitFor(() => {
+            expect(screen.getByText('Projects: test')).toBeInTheDocument();
+        });
     });
 });
 

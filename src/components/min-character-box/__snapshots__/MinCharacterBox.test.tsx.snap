@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MinCharacterBox Component matches the snapshot 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-1c5ij41"
+  >
+    <h2
+      class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-gi7hi0-MuiTypography-root"
+    >
+      Please enter a search query inside search field (at least 
+      3
+       letters).
+    </h2>
+  </div>
+</div>
+`;
