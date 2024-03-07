@@ -14,11 +14,19 @@ exports[`matches the snapshot 1`] = `
         <div
           class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-t5ouwv-MuiPaper-root"
         >
-          <h2
-            class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-gi7hi0-MuiTypography-root"
-          >
-            About
+          <h2>
+            About Me
           </h2>
+          <p>
+            My name is Babak Mehrabi and I did this task as an interview task for Wire.
+          </p>
+          <p>
+            If you have any question or comment regarding this project, you can write me an email:
+            <br />
+            <b>
+              b.mehrabi.91 [at] gmail.com
+            </b>
+          </p>
         </div>
       </div>
     </div>

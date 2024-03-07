@@ -2,7 +2,6 @@ import React from 'react';
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
-import Title from '../../components/Title';
 
 export const About = () => {
   return (
@@ -18,7 +17,16 @@ export const About = () => {
               height: 240,
             }}
           >
-            <Title>About</Title>
+            <h2>About Me</h2>
+
+            <p>
+              My name is Babak Mehrabi and I did this task as an interview task for Wire.
+            </p>
+            <p>
+              If you have any question or comment regarding this project, you can write me an email:
+              <br/>
+              <b>b.mehrabi.91 [at] gmail.com</b>
+            </p>
           </Paper>
         </Grid>
       </Grid>
