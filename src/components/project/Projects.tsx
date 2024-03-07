@@ -11,7 +11,7 @@ import {IProjectModel, IProjectProps} from './typings';
 import {getSearchUri} from 'src/api/api';
 import MinCharacterBox from 'src/components/min-character-box/MinCharacterBox';
 
-export default function Projects({query}: IProjectProps) {
+export default function Projects({query, sort}: IProjectProps) {
   const SEARCH_QUERY_MINIMUM_CHARACTERS = 3;
   const ROWS_PER_PAGE_OPTION = [5, 10, 25];
 
@@ -36,7 +36,7 @@ export default function Projects({query}: IProjectProps) {
   const fetchData = useCallback(async (): Promise<void> => {
     try {
       setIsLoading(true);
-      const response = await fetch(getSearchUri(query));
+      const response = await fetch(getSearchUri(query, sort));
 
       validateResponse(response);
 
@@ -47,7 +47,7 @@ export default function Projects({query}: IProjectProps) {
       console.error(error.toString());
       setIsLoading(false);
     }
-  }, [query]);
+  }, [query, sort]);
 
   useEffect(() => {
     if(query.length < SEARCH_QUERY_MINIMUM_CHARACTERS) {

@@ -7,4 +7,5 @@ export interface IProjectModel {
 
 export interface IProjectProps {
   query: string;
+  sort?: boolean;
 }
